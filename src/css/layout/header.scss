@@ -1,0 +1,127 @@
+.header {
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0 20px;
+    @include xs {
+      padding: 14px 0;
+    }
+  }
+
+
+  &-right,
+  &-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &-left {
+    @include xs {
+      width: 100%;
+    }
+  }
+
+  &-right {
+    @include xs {
+      display: none;
+    }
+  }
+
+  &-logo {
+  }
+
+  &-burger {
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-profile {
+    background: #f2f2f2;
+    border-radius: 40px;
+    padding: 6px;
+  }
+
+  &-basket.btn {
+    padding: 6px 20.5px;
+
+  }
+
+  $color_fonts: var(--primary);
+
+  &__burger {
+    margin-left: 12px;
+    position: relative;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    aspect-ratio: 1 / 1;
+    background: $color_fonts;
+    border-radius: 100%;
+    border: 1px solid $color_fonts;
+    transition: .25s ease-in-out;
+    transition-property: background-color, border-color;
+
+    &:hover {
+      background-color: #fff;
+      border-color: $color_fonts;
+
+      .header__burger-inner {
+        background-color: $color_fonts;
+      }
+    }
+
+    &:focus-visible {
+      filter: drop-shadow(-4px 4px 6px rgba(55, 0, 213, 0.25)) drop-shadow(4px 4px 6px rgba(55, 0, 212, 0.25));
+    }
+
+    &-inner {
+      position: absolute;
+      left: 50%;
+      display: block;
+      height: 2px;
+      width: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: .35s ease-in-out;
+      transition-property: background-color, transform;
+      transform: translateX(-50%);
+
+      &:nth-child(1) {
+        top: calc(50% - 4px);
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-child(2) {
+        top: calc(50% + 4px);
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &.is_active {
+      background-color: transparent;
+
+      .header__burger-inner {
+        background-color: $color_fonts;
+
+        &:nth-child(1) {
+          transform: translate(-50%, 4px) rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          transform: translate(-50%, -4px) rotate(-135deg);
+        }
+      }
+    }
+  }
+}

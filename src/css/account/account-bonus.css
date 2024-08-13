@@ -1,0 +1,39 @@
+.account-bonus__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 20px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  margin-bottom: 10px;
+}
+.account-bonus__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.account-bonus__item-left {
+  display: flex;
+  gap: 40px;
+}
+.account-bonus__item-date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #323232;
+}
+.account-bonus__item-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #323232;
+}
+.account-bonus__item-info {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+}
+.account-bonus__item.success .account-bonus__item-info {
+  color: #2bc631;
+}
+.account-bonus__item.error .account-bonus__item-info {
+  color: #D91F3A;
+}

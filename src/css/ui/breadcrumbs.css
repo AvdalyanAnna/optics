@@ -1,0 +1,16 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+}
+.breadcrumbs-item:not(:nth-last-child(1)):after {
+  content: "/";
+  margin-right: 5px;
+  color: #323232;
+}
+.breadcrumbs-link {
+  color: #323232;
+}

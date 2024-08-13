@@ -1,0 +1,25 @@
+.breadcrumbs{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  @include sm {
+    margin-bottom: 10px;
+  }
+  @include xs {
+    font-size: 14px;
+    margin-bottom:13px;
+  }
+  &-item {
+    &:not(:nth-last-child(1)):after {
+      content: "/";
+      margin-right: 5px;
+      color: #323232;
+    }
+  }
+  &-link {
+    color: #323232;
+  }
+}

@@ -1,0 +1,110 @@
+.account-history {
+  &__list{}
+  &__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    &.card{
+      padding: 32px;
+      border-radius: 20px;
+      @include xs {
+        padding: 20px 10px 25px;
+      }
+
+    }
+    &-head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 92%;
+      @include sm {
+        width: 88%;
+      }
+      @include xs {
+        width: 94%;
+      }
+    }
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #323232;
+    .big{
+      font-size: 20px;
+      font-weight: 600;
+      @include xs {
+        font-size: 16px;
+        &.price{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__product{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    @include xs {
+      flex-wrap: wrap;
+      border-radius: 10px;
+    }
+    &-img{
+      img{
+        border-radius: 4px;
+      }
+    }
+    &-text{
+      flex: 1;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 140%;
+      color: #323232;
+    }
+    &-item{
+      display: flex;
+      margin-bottom: 10px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+    &-last{
+      max-width: 319px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: #323232;
+      @include sm {
+        max-width: 214px;
+      }
+      @include xs {
+        max-width: 100%;
+      }
+      span {
+        width: 50%;
+      }
+    }
+  }
+
+}
