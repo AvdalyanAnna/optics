@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="@@bodyClass">
+
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/" class="header-logo">
+                    <img src="/img/logo.svg" alt="logo">
+                </a>
+                <button class="header__burger">
+                    <span class="header__burger-inner"></span>
+<!--                    <span class="header__burger-inner"></span>-->
+                    <span class="header__burger-inner"></span>
+                </button>
+                <div class="header-list">
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Каталог</a>
+                    </div>
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Доставка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header-btn header-basket btn btn-primary btn-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>
+                        Корзина
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="page-top">
+        <div class="wrapper">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-item">
+                    Личный кабинет
+                </li>
+            </ul>
+            <h2 class="title">Личный кабинет</h2>
+            <div class="account">
+                <nav class="account-nav">
+                    <div class="account-nav__head">
+                        <div class="account-nav__head-avatar">
+                            <img src="/img/avatar.png" alt="avatar">
+                        </div>
+                        <div class="account-nav__head-person">
+                            Константин Константинопольский
+                        </div>
+                    </div>
+                    <ul class="account-list">
+                        <li class="account-item active">
+                            <a href="/account-history.html" class="account-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 7.99968L6 7.99967M14 3.99968L6 3.99967M14 11.9997L6 11.9997M3.33333 7.99967C3.33333 8.36786 3.03486 8.66634 2.66667 8.66634C2.29848 8.66634 2 8.36786 2 7.99967C2 7.63148 2.29848 7.33301 2.66667 7.33301C3.03486 7.33301 3.33333 7.63148 3.33333 7.99967ZM3.33333 3.99967C3.33333 4.36786 3.03486 4.66634 2.66667 4.66634C2.29848 4.66634 2 4.36786 2 3.99967C2 3.63148 2.29848 3.33301 2.66667 3.33301C3.03486 3.33301 3.33333 3.63148 3.33333 3.99967ZM3.33333 11.9997C3.33333 12.3679 3.03486 12.6663 2.66667 12.6663C2.29848 12.6663 2 12.3679 2 11.9997C2 11.6315 2.29848 11.333 2.66667 11.333C3.03486 11.333 3.33333 11.6315 3.33333 11.9997Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="account-item__text">История покупок</span>
+                            </a>
+                        </li>
+                        <li class="account-item">
+                            <a href="/bonus.html" class="account-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_105_2747)">
+                                        <path d="M6.73271 2.66634C7.5744 1.84155 8.72716 1.33301 9.9987 1.33301C12.576 1.33301 14.6654 3.42235 14.6654 5.99967C14.6654 7.27123 14.1568 8.42401 13.332 9.2657M10.6654 9.99967C10.6654 12.577 8.57603 14.6663 5.9987 14.6663C3.42137 14.6663 1.33203 12.577 1.33203 9.99967C1.33203 7.42235 3.42137 5.33301 5.9987 5.33301C8.57603 5.33301 10.6654 7.42235 10.6654 9.99967Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_105_2747">
+                                            <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="account-item__text">Бонусы</span>
+                            </a>
+                        </li>
+                        <li class="account-item ">
+                            <a href="change-profile.html" class="account-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5.33301L10 5.33301M10 5.33301C10 6.43758 10.8954 7.33301 12 7.33301C13.1046 7.33301 14 6.43758 14 5.33301C14 4.22844 13.1046 3.33301 12 3.33301C10.8954 3.33301 10 4.22844 10 5.33301ZM6 10.6663L14 10.6663M6 10.6663C6 11.7709 5.10457 12.6663 4 12.6663C2.89543 12.6663 2 11.7709 2 10.6663C2 9.56177 2.89543 8.66634 4 8.66634C5.10457 8.66634 6 9.56177 6 10.6663Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="account-item__text">Редактировать данные</span>
+                            </a>
+                        </li>
+                        <li class="account-item">
+                            <a href="/" class="account-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9987 5.33333L14.6654 8M14.6654 8L11.9987 10.6667M14.6654 8H5.9987M9.9987 2.80269C9.14886 2.29218 8.16219 2 7.10981 2C3.91883 2 1.33203 4.68629 1.33203 8C1.33203 11.3137 3.91883 14 7.10981 14C8.16219 14 9.14886 13.7078 9.9987 13.1973"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="account-item__text">Выход из аккаунта</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="account-content">
+                    <h1 class="account-title">История покупок</h1>
+                    <div class="account-history">
+                        <ul class="account-history__list">
+                            <li class="account-history__item card">
+                                <div class="account-history__item-head">
+                                    <div class="account-history-info">
+                                        <span>12.03.24</span>
+                                        <span class="big">Заказ №234467</span>
+                                    </div>
+                                    <div class="account-history-info">
+                                        <span>Статус заказа</span>
+                                        <span class="big">Оплачен</span>
+                                    </div>
+                                </div>
+                                <div class="account-history__item-content">
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-history__item-foot">
+                                    <div class="account-history-info">
+                                        <span>Сумма заказа</span>
+                                        <span class="big price">246 700 ₽</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account-history__item card">
+                                <div class="account-history__item-head">
+                                    <div class="account-history-info">
+                                        <span>12.03.24</span>
+                                        <span class="big">Заказ №234467</span>
+                                    </div>
+                                    <div class="account-history-info">
+                                        <span>Статус заказа</span>
+                                        <span class="big">Оплачен</span>
+                                    </div>
+                                </div>
+                                <div class="account-history__item-content">
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-history__product">
+                                        <div class="account-history__product-img">
+                                            <img src="/img/history-product.jpg" alt="history-product">
+                                        </div>
+                                        <div class="account-history__product-text">Versace VE4361 GB1/87</div>
+                                        <div class="account-history__product-last">
+                                            <div class="account-history__product-item">
+                                                <span>Цвет:</span><span>Черный</span>
+                                            </div>
+                                            <div class="account-history__product-item">
+                                                <span>Оправа:</span><span>Прямоугольная</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-history__item-foot">
+                                    <div class="account-history-info">
+                                        <span>Сумма заказа</span>
+                                        <span class="big price">246 700 ₽</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <img src="/img/logo.svg" alt="logo">
+                </a>
+                <a href="tel:+78007434343" class="footer-phone">+7(800)743-43-43</a>
+                <span class="footer-time">Пн-Вс с 9:00 до 21:00</span>
+                <div class="footer-btn btn btn-primary">Заказать звонок</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Каталог</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Солнцезащитные очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Оправы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контактные линзы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Аксессуары для очков</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Проверка зрения</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Взрослая диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Детская диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Рецепт на очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подбор контактных линз</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Полезная информация</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">О компании</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Акции</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подарочные карты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
