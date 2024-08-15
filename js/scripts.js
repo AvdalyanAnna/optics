@@ -285,3 +285,14 @@ var swiper = new Swiper(".gift-slider", {
         },
     },
 });
+
+var swiper = new Swiper(".stock-slider", {
+    pagination:   {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+});
