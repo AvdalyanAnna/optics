@@ -1,0 +1,226 @@
+.about {
+  &-card {
+    border-radius: 20px;
+    padding: 28px 40px 40px;
+    background: #f6f6f6;
+    margin: 51px 0;
+    @include sm {
+      margin: 33px 0;
+      padding: 40px;
+    }
+    @include xs {
+      margin: 14px 0;
+      padding: 20px;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      @include sm {
+        flex-direction: column;
+        gap: 40px;
+      }
+      @include xs {
+        gap: 26px;
+        //padding: 0 20px;
+      }
+    }
+
+    &__title {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 139%;
+      color: #47464a;
+      margin-bottom: 40px;
+      @include sm {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+      @include xs {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__desc {
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 139%;
+      color: #47464a;
+      @include xs {
+        font-size: 14px;
+        line-height: 143%;
+      }
+    }
+
+    &__img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include sm {
+        max-height: 313px;
+      }
+      @include xs {
+        max-height: 160px;
+      }
+    }
+
+    &__left {
+      width: calc(50% - 10px);
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    &__right {
+      width: calc(50% - 10px);
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 28px;
+      @include sm {
+        margin-top: 40px;
+      }
+      @include xs {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+    }
+
+    &__item {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.3;
+      text-align: center;
+      color: #d91f3a;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 20px;
+      height: 168px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include sm {
+        height: 147px;
+        font-size: 14px;
+        border: 1px solid #e3e3e3;
+      }
+      @include xs {
+        height: 92px;
+        max-width: calc(50% - 5px);
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+        flex: none;
+      }
+    }
+  }
+}
+
+.contact {
+  &-inner {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 32px;
+    @include xs {
+      flex-direction: column;
+      margin-top: 14px;
+    }
+  }
+
+  &-addresses {
+    max-width: 455px;
+    width: 100%;
+    height: 355px;
+    overflow-y: auto;
+    @include sm {
+      max-width: 298px;
+      height: 269px;
+    }
+    @include xs {
+      max-width: 100%;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Стиль ползунка */
+    ::-webkit-scrollbar-thumb {
+      background-color: #F6F6F6; /* Цвет ползунка */
+      border-radius: 6px; /* Скругленные края */
+    }
+
+    /* Стиль фона скроллбара */
+    ::-webkit-scrollbar-track {
+      background-color: #E3E3E3; /* Цвет фона скроллбара */
+    }
+  }
+
+  &-address {
+    width: 90%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #323232;
+    padding: 18px 0;
+    position: relative;
+    transition: color 0.3s;
+    cursor: pointer;
+    @include sm {
+      width: 100%;
+      font-size: 14px;
+      padding: 11px 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #E3E3E3;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover,
+    &.active {
+      color: var(--primary);
+    }
+  }
+
+  &-map {
+    max-width: calc(100% - 455px - 20px);
+    width: 100%;
+    @include sm {
+      max-width: calc(100% - 298px - 20px);
+    }
+    @include xs {
+      max-width: 100%;
+      height: 264px;
+    }
+
+    .about-map {
+      height: 100%;
+    }
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

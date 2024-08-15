@@ -1,0 +1,34 @@
+.clients {
+  margin: 53px 0 60px;
+  padding: 60px 0;
+}
+.clients-list__inner:nth-child(2) {
+  margin-left: -150px;
+}
+.clients-list__inner:nth-child(3) {
+  margin-left: -500px;
+}
+.clients-inner .title {
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.clients-list * {
+  transition: 0.3s;
+}
+.clients-item {
+  max-width: 195px;
+  min-width: 195px;
+  height: 84px;
+  display: block;
+  transition-property: transform, -webkit-transform;
+}
+.clients-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

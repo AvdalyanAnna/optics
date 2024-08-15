@@ -1,10 +1,11 @@
 @import "media-queries";
+@import "libs";
 @import "fonts";
 @import "ui";
 @import "layout";
 @import "account";
-
-
+@import "pages";
+@import "blocks";
 * {
   margin: 0;
   padding: 0;
@@ -138,5 +139,36 @@ main{
   }
   @include xs {
     font-size: 28px;
+  }
+}
+.sub-title{
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 139%;
+  color: #47464a;
+  @include sm {
+    font-size: 28px;
+  }
+  @include xs {
+    font-size: 20px;
+  }
+}
+
+.description{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139%;
+  color: #47464a;
+  strong,b {
+    font-weight: 700;
+    letter-spacing: 0.35px;
+  }
+  @include sm {
+    font-size: 14px;
+  }
+  @include xs {
+    font-size: 12px;
   }
 }
