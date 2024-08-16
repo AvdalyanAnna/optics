@@ -171,4 +171,30 @@ main{
   @include xs {
     font-size: 12px;
   }
+
+  ul{
+    li{
+      padding-left: 24px;
+      position: relative;
+      @include xs {
+        padding-left: 16px;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        background: #47464a;
+        border-radius: 50%;
+        width: 3px;
+        height: 3px;
+        left: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include xs {
+          width: 2px;
+          height: 2px;
+          left: 7px;
+        }
+      }
+    }
+  }
 }

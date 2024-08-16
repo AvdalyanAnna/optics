@@ -1,0 +1,156 @@
+.article {
+  &-content {
+    &__bg {
+      height: 410px;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+      @include sm {
+        height: 229px;
+      }
+      @include xs {
+        height: 239px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        //@include sm {
+        //  height: 299px;
+        //  max-height: 299px;
+        //}
+      }
+
+    }
+
+    &__inner {
+      margin: -85px 95px 120px;
+      border-radius: 20px;
+      padding: 40px;
+      background: #f6f6f6;
+      @include sm {
+        margin: -91px 26px 60px;
+        padding: 20px;
+      }
+      @include xs {
+        margin: -120px 12px 20px;
+        padding: 14px;
+      }
+      .sub-title {
+        margin-bottom: 20px;
+        @include sm {
+          font-size: 26px;
+          margin-bottom: 24px;
+        }
+        @include xs {
+          font-size: 22px;
+          line-height: 1.25;
+        }
+      }
+
+      .description {
+        margin-bottom: 37px;
+
+        &.mb-20 {
+          margin-bottom: 20px;
+        }
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+        @include sm {
+          line-height: 1.45;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #47464a;
+    margin: 40px 0;
+    @include sm {
+      margin: 20px 0 15px;
+      font-size: 32px;
+    }
+    @include xs {
+      margin: -3px 0 18px;
+      font-size: 26px;
+    }
+  }
+
+  &-sub__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #323232;
+    margin-bottom: 20px;
+    @include sm {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    @include xs {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-list {
+    margin-bottom: 40px;
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-item {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #323232;
+    margin-bottom: 14px;
+    padding-left: 20px;
+    @include sm {
+      font-size: 14px;
+    }
+    @include xs {
+      font-size: 12px;
+    }
+    &.active {
+      color: var(--primary);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: var(--primary);
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    @include sm {
+      margin-bottom: 20px;
+    }
+    @include xs {
+      height: 149px;
+    }
+  }
+}
