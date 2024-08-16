@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 19px 0 20px;
+    position: relative;
     @include xs {
       padding: 14px 0;
     }
@@ -124,4 +125,96 @@
       }
     }
   }
+  &-menu{
+    width: 362px;
+    position: absolute;
+    padding: 37px 41px;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.1);
+    background: #f6f6f6;
+    border-radius: 40px;
+    top: 82px;
+    left: -41px;
+    z-index: 9;
+    //opacity: 0;
+    //transition: all 0.3s;
+    //&.active {
+    //  opacity: 1;
+    //}
+    @media screen and (max-width: 1200px) {
+      border-radius: 0 40px 40px 0;
+    }
+    @include sm {
+      left: -60px;
+    }
+    @include xs {
+      width: 252px;
+      left: auto;
+      right: -20px;
+      padding: 30px 30px;
+      top: 69px;
+      border-radius: 40px 0 0 40px;
+    }
+    &__item{
+      margin-bottom: 23px;
+      @include xs {
+        margin-bottom: 6px;}
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+      &-open{
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        color: #323232;
+        cursor: pointer;
+        transition: all 0.3s;
+        @include xs {
+          font-size: 18px;
+        }
+        svg{
+          transition: all 0.3s;
+          transform: rotate(-180deg);
+        }
+        &.active{
+          svg{
+            transform: rotate(0);
+          }
+        }
+        &__link{
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 18px;
+          color: #323232;
+          @include xs {
+            font-size: 16px;
+          }
+        }
+      }
+      &-list{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-left: 20px;
+        margin-top: 5px;
+        @include xs {
+          gap: 1px;
+          margin-left: 10px;
+          margin-top: 11px;
+        }
+      }
+      &-link{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        color: #323232;
+        @include xs {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
+

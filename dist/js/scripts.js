@@ -238,6 +238,16 @@ $(function() {
 // Загрузка API Яндекс.Карт и вызов функции инициализации
       ymaps.ready(init);
   }
+
+  $('.header__burger').on('click', function () {
+      $(this).toggleClass('is_active')
+      $('.header-menu').slideToggle()
+  })
+
+    $('.header-menu__item-open').on('click', function () {
+        $('.header-menu__item-list').slideToggle()
+        $(this).toggleClass('active')
+    })
 })
 
 
