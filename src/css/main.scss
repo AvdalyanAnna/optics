@@ -198,3 +198,136 @@ main{
     }
   }
 }
+
+.product-filter{
+  .select2{
+    margin-top: -10px;
+    width: 100% !important;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 139% !important;
+  }
+  .select2-container--default .select2-selection--single{
+    border: 1px solid #e6e9eb;
+    border-radius: 20px;
+    padding: 4px 15px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+    color: #2b2d2f;
+    .select2-selection__arrow{
+      right: 24px;
+      top: 20px;
+      width: 16px;
+      height: 16px;
+      background-image: url('../img/arrow.svg');
+      b{
+        display: none;
+      }
+    }
+  }
+}
+
+.select2-container--default {
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 139% !important;
+  .select2-results__option{
+    padding: 8px 16px;
+  }
+  .select2-results__option--selected{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 139% !important;
+  }
+
+   .select2-results__option--highlighted.select2-results__option--selectable{
+     background: var(--primary);
+   }
+
+}
+.select2-search{
+  display: none;
+}
+
+.select2-dropdown{
+  border-radius: 20px;
+  overflow: hidden;
+  border-color:  #e6e9eb;
+}
+
+
+.value {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -20px;
+  width: 40px;
+  text-align: center;
+  display: block;
+
+  /* optional */
+
+  font-weight: normal;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.price-range-both.value {
+  width: 100px;
+  margin: 0 0 0 -50px;
+  top: 26px;
+}
+
+.price-range-both {
+  display: none;
+}
+
+.value i {
+  font-style: normal;
+}
+.ui-widget-content {
+  background: #DFECF2;
+  border: none;
+  height: 4px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  border-radius: 50%;
+  border: none;
+  background: var(--primary);
+  width: 20px;
+  height: 20px;
+  top: -8px;
+}
+.ui-widget-header{
+  background: #F2A8B3;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all {
+
+  .price-range-min,
+  .price-range-max{
+    display: none !important;
+  }
+}
+
+.price-range-both {
+  display: none !important;
+}
+
+input{
+  outline: none !important;
+  &:focus{
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}

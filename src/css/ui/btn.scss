@@ -6,6 +6,9 @@
   border-radius: 84px;
   text-align: center;
   padding: 12px 32px;
+  border: 1px solid transparent;
+  transition:all 0.3s;
+  cursor: pointer;
   &-small{
     display: flex;
     align-items: center;
@@ -15,10 +18,28 @@
   }
   &-border{
     border: 1px solid #e3e3e3;
+    &:hover{
+      border-color: var(--primary);
+      color: var(--primary);
+    }
   }
   &-primary{
+    border-color: #d91f3a;
     background: #d91f3a;
     color: #fff;
+    svg path{
+      transition: all 0.3s;
+    }
+    &:hover{
+      border-color: var(--primary);
+      background: transparent;
+      color: var(--primary);
+      svg{
+        path{
+          stroke: var(--primary);
+        }
+      }
+    }
   }
 
 }
