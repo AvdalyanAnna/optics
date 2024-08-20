@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="@@bodyClass">
+
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/" class="header-logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <button class="header__burger">
+                    <span class="header__burger-inner"></span>
+<!--                    <span class="header__burger-inner"></span>-->
+                    <span class="header__burger-inner"></span>
+                </button>
+                <div class="header-menu" style="display: none;">
+                    <div class="header-menu__item">
+                        <div class="header-menu__item-open">
+                            <span>Каталог</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 15L12 9L6 15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="header-menu__item-list" style="display: none;">
+                            <a href="#" class="header-menu__item-open__link">Оправы</a>
+                            <a href="#" class="header-menu__item-open__link">Солнечные очки</a>
+                            <a href="#" class="header-menu__item-open__link">Контактные линзы</a>
+                            <a href="#" class="header-menu__item-open__link">Аксессуары для очков</a>
+                        </div>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/gift-cards.html" class="header-menu__item-link">Подарочные карты</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/stock.html" class="header-menu__item-link">Акции</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/blog.html" class="header-menu__item-link">Блог</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/about.html" class="header-menu__item-link">О компании</a>
+                    </div>
+                </div>
+                <div class="header-list">
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Каталог</a>
+                    </div>
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Доставка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header-btn header-basket btn btn-primary btn-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>
+                        Корзина
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="page-top">
+        <div class="wrapper">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-item">
+                    Оформление заказа
+                </li>
+            </ul>
+            <h2 class="title">Оформление заказа</h2>
+            <div class="order">
+                <div class="order-inner">
+                    <div class="order-left">
+                        <div class="order-left__item">
+                            <div class="order-left__title">Способ получения</div>
+                            <div class="order-form__item">
+                                <div class="product-filter__item-radio">
+                                    <input type="radio" name="radio" id="radio-1">
+                                    <label for="radio-1"><span>Расчитать стоимость доставки и включить в счет</span></label>
+                                </div>
+                            </div>
+                            <div class="order-form__item">
+                                <div class="product-filter__item-radio">
+                                    <input type="radio" name="radio" id="radio-2" checked>
+                                    <label for="radio-2">Самовывоз</label>
+                                </div>
+                            </div>
+                            <div class="order-form__item">
+                                <label for="select" class="order-form__label">Пункт выдачи</label>
+                                    <select class="js-example-basic-single select" id="select" name="state">
+                                        <option value="WY">Выберите пункт выдачи</option>
+                                        <option value="AL">По популярности</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="order-left__item">
+                            <div class="order-left__title">Данные получателя</div>
+                            <div class="order-form__item">
+                                <label for="name" class="order-form__label">Ваше имя</label>
+                                <input type="text" id="name" class="order-form__input" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="surname" class="order-form__label">Ваша фамилия</label>
+                                <input type="text" id="surname" class="order-form__input" placeholder="Введите вашу фамилию">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="phone" class="order-form__label">Ваш телефон</label>
+                                <input type="text" id="phone" class="order-form__input" placeholder="Введите ваш телефон">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="email" class="order-form__label">Ваш e-mail</label>
+                                <input type="email" id="email" class="order-form__input" placeholder="Введите ваш e-mail">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="comment" class="order-form__label">Комментарий</label>
+                                <textarea id="comment" class="order-form__textarea" placeholder="Введите комментарий к заказу"></textarea>
+                            </div>
+                        </div>
+                        <div class="order-left__item">
+                            <div class="order-left__title">Списать бонусы</div>
+                            <div class="order-form__item">
+                                <label for="bonus" class="order-form__label">Ваш счет <span class="text-primary">234</span> бонуса</label>
+                                <div class="order-form__flex">
+                                    <input type="text" id="bonus" class="order-form__input" placeholder="Введите количество бонусов к списанию">
+                                    <button class="btn btn-dark">Списать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-right">
+                        <div class="order-right__title">Ваш заказ</div>
+                        <div class="order-right__list">
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>20 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>2 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>200 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>20 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Доставка</span>
+                                <span>700 ₽</span>
+                            </div>
+                        </div>
+                        <div class="order-right__bottom">
+                            <div class="order-right__price">
+                                Итого
+                                <span>246 700 ₽</span>
+                            </div>
+                            <button class="btn btn-primary order-right__btn">Подтвердить заказ</button>
+                        </div>
+                        <div class="order-right__info">
+                            Нажимая кнопку вы даете согласие на
+                            <a href="#" class="text-primary link">обработку персональных данных</a>
+                            в соответствии с
+                            <a href="#" class="text-primary link">политикой конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <a href="tel:+78007434343" class="footer-phone">+7(800)743-43-43</a>
+                <span class="footer-time">Пн-Вс с 9:00 до 21:00</span>
+                <div class="footer-btn btn btn-primary">Заказать звонок</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Каталог</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Солнцезащитные очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Оправы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контактные линзы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Аксессуары для очков</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Проверка зрения</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Взрослая диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Детская диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Рецепт на очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подбор контактных линз</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Полезная информация</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">О компании</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Акции</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подарочные карты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
