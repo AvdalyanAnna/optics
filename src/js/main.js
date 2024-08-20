@@ -112,12 +112,54 @@ $(function () {
             disableOnInteraction: false,
         },
     });
+    let productSwiper = new Swiper(".products-slide", {
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            900: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+
+    let productSmallSwiper = new Swiper(".product-slide-small", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        watchSlidesProgress: true,
+
+    });
+
+    let productBigSwiper = new Swiper(".product-slide-big", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        // freeMode: true,
+        thumbs: {
+            swiper: productSmallSwiper
+        }
+    });
+
+
     $('.product-filter__item-more').on('click', function () {
         const $this = $(this);
         $this.hide(0)
         $this.parent().find('.product-filter__item-more__show').slideToggle(300)
     })
-        $('.js-example-basic-single').select2();
+    $('.js-example-basic-single').select2();
 
     function collision($div1, $div2) {
         var x1 = $div1.offset().left;
@@ -137,8 +179,8 @@ $(function () {
         range: true,
         min: 12000,
         max: 300000,
-        values: [ 12000, 140000 ],
-        slide: function(event, ui) {
+        values: [12000, 140000],
+        slide: function (event, ui) {
             $('.product-price__min').val(ui.values[0]);
             $('.product-price__max').val(ui.values[1]);
         }
@@ -147,7 +189,7 @@ $(function () {
     $('.product-price__min').val($('#slider').slider("values", 0).toLocaleString());
     $('.product-price__max').val($('#slider').slider("values", 1).toLocaleString());
 
-    $('.product-price__min').on('blur change', function() {
+    $('.product-price__min').on('blur change', function () {
         let minValue = parseInt($(this).val().replace(/\s+/g, ''), 10);
         if (!isNaN(minValue) && minValue >= 12000 && minValue <= $('#slider').slider('values', 1)) {
             $('#slider').slider('values', 0, minValue);
@@ -157,7 +199,7 @@ $(function () {
         }
     });
 
-    $('.product-price__max').on('blur change', function() {
+    $('.product-price__max').on('blur change', function () {
         let maxValue = parseInt($(this).val().replace(/\s+/g, ''), 10);
         if (!isNaN(maxValue) && maxValue >= $('#slider').slider('values', 0) && maxValue <= 300000) {
             $('#slider').slider('values', 1, maxValue);
@@ -168,11 +210,11 @@ $(function () {
         }
     });
 
-    $('.product-content__filter').on('click',function (){
+    $('.product-content__filter').on('click', function () {
         $('.product-filter').slideDown()
         $('body').addClass('overflow-hidden')
     })
-    $('.product-filter__title-close').on('click',function (){
+    $('.product-filter__title-close').on('click', function () {
         $('.product-filter').slideUp()
         $('body').removeClass('overflow-hidden')
     })

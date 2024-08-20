@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body class="@@bodyClass">
+
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/" class="header-logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <button class="header__burger">
+                    <span class="header__burger-inner"></span>
+<!--                    <span class="header__burger-inner"></span>-->
+                    <span class="header__burger-inner"></span>
+                </button>
+                <div class="header-menu" style="display: none;">
+                    <div class="header-menu__item">
+                        <div class="header-menu__item-open">
+                            <span>Каталог</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 15L12 9L6 15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="header-menu__item-list" style="display: none;">
+                            <a href="#" class="header-menu__item-open__link">Оправы</a>
+                            <a href="#" class="header-menu__item-open__link">Солнечные очки</a>
+                            <a href="#" class="header-menu__item-open__link">Контактные линзы</a>
+                            <a href="#" class="header-menu__item-open__link">Аксессуары для очков</a>
+                        </div>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/gift-cards.html" class="header-menu__item-link">Подарочные карты</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/stock.html" class="header-menu__item-link">Акции</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/blog.html" class="header-menu__item-link">Блог</a>
+                    </div>
+                    <div class="header-menu__item">
+                        <a href="/about.html" class="header-menu__item-link">О компании</a>
+                    </div>
+                </div>
+                <div class="header-list">
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Каталог</a>
+                    </div>
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link btn btn-small btn-border">Доставка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21M12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13Z" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header-btn header-basket btn btn-primary btn-small">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>
+                        Корзина
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="page-top">
+        <div class="wrapper">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-item">
+                    Корзина
+                </li>
+            </ul>
+            <h2 class="title">Корзина</h2>
+            
+            <div class="products-buys">
+                <div class="products-buy">
+                    <div class="products-buy__img">
+                        <img src="img/product-img.jpg" alt="product-img">
+                    </div>
+                    <div class="products-buy__main">
+                        <div class="products-buy__text">
+                            <div class="products-buy__title">Versace VE4361 GB1/87</div>
+                            <div class="account-history__product-last">
+                                <div class="account-history__product-item">
+                                    <span>Цвет:</span><span>Черный</span>
+                                </div>
+                                <div class="account-history__product-item">
+                                    <span>Оправа:</span><span>Прямоугольная</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-buy__end">
+                        <div>
+                            <div class="products-buy__price-title">Количество </div>
+                            <div class="kilograms" data-min="1" data-step="1" data-id="1">
+                                <div class="minus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.16699 10H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="kilogram">
+                                    <input type="number" max="999" class="kol" name="10338" min="1" step="1" value="21">
+                                    <span>шт</span>
+                                </div>
+                                <div class="plus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0003 4.16699V15.8337M4.16699 10.0003H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-buy__price">
+                            <div class="products-buy__price-title">Цена </div>
+                            <div class="products-buy__price-text">200 700 ₽</div>
+                        </div>
+                        <div class="products-buy__delete">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9997 18V33.7333C17.9997 35.2268 17.9997 35.973 18.2903 36.5435C18.546 37.0452 18.9536 37.454 19.4554 37.7096C20.0253 38 20.7717 38 22.2622 38H29.7371C31.2277 38 31.973 38 32.5429 37.7096C33.0446 37.454 33.4536 37.0452 33.7093 36.5435C33.9997 35.9736 33.9997 35.228 33.9997 33.7375V18M17.9997 18H20.6663M17.9997 18H15.333M20.6663 18H31.333M20.6663 18C20.6663 16.7575 20.6663 16.1365 20.8693 15.6465C21.14 14.9931 21.6588 14.4736 22.3122 14.203C22.8022 14 23.4238 14 24.6663 14H27.333C28.5755 14 29.1968 14 29.6868 14.203C30.3402 14.4736 30.8592 14.9931 31.1299 15.6465C31.3329 16.1365 31.333 16.7575 31.333 18M31.333 18H33.9997M33.9997 18H36.6663" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-buy">
+                    <div class="products-buy__img">
+                        <img src="img/product-img.jpg" alt="product-img">
+                    </div>
+                    <div class="products-buy__main">
+                        <div class="products-buy__text">
+                            <div class="products-buy__title">Versace VE4361 GB1/87</div>
+                            <div class="account-history__product-last">
+                                <div class="account-history__product-item">
+                                    <span>Цвет:</span><span>Черный</span>
+                                </div>
+                                <div class="account-history__product-item">
+                                    <span>Оправа:</span><span>Прямоугольная</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-buy__end">
+                        <div>
+                            <div class="products-buy__price-title">Количество </div>
+                            <div class="kilograms" data-min="1" data-step="1" data-id="1">
+                                <div class="minus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.16699 10H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="kilogram">
+                                    <input type="number" max="999" class="kol" name="10338" min="1" step="1" value="21">
+                                    <span>шт</span>
+                                </div>
+                                <div class="plus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0003 4.16699V15.8337M4.16699 10.0003H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-buy__price">
+                            <div class="products-buy__price-title">Цена </div>
+                            <div class="products-buy__price-text">200 700 ₽</div>
+                        </div>
+                        <div class="products-buy__delete">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9997 18V33.7333C17.9997 35.2268 17.9997 35.973 18.2903 36.5435C18.546 37.0452 18.9536 37.454 19.4554 37.7096C20.0253 38 20.7717 38 22.2622 38H29.7371C31.2277 38 31.973 38 32.5429 37.7096C33.0446 37.454 33.4536 37.0452 33.7093 36.5435C33.9997 35.9736 33.9997 35.228 33.9997 33.7375V18M17.9997 18H20.6663M17.9997 18H15.333M20.6663 18H31.333M20.6663 18C20.6663 16.7575 20.6663 16.1365 20.8693 15.6465C21.14 14.9931 21.6588 14.4736 22.3122 14.203C22.8022 14 23.4238 14 24.6663 14H27.333C28.5755 14 29.1968 14 29.6868 14.203C30.3402 14.4736 30.8592 14.9931 31.1299 15.6465C31.3329 16.1365 31.333 16.7575 31.333 18M31.333 18H33.9997M33.9997 18H36.6663" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-buy">
+                    <div class="products-buy__img">
+                        <img src="img/product-img.jpg" alt="product-img">
+                    </div>
+                    <div class="products-buy__main">
+                        <div class="products-buy__text">
+                            <div class="products-buy__title">Versace VE4361 GB1/87</div>
+                            <div class="account-history__product-last">
+                                <div class="account-history__product-item">
+                                    <span>Цвет:</span><span>Черный</span>
+                                </div>
+                                <div class="account-history__product-item">
+                                    <span>Оправа:</span><span>Прямоугольная</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-buy__end">
+                        <div>
+                            <div class="products-buy__price-title">Количество </div>
+                            <div class="kilograms" data-min="1" data-step="1" data-id="1">
+                                <div class="minus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.16699 10H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="kilogram">
+                                    <input type="number" max="999" class="kol" name="10338" min="1" step="1" value="21">
+                                    <span>шт</span>
+                                </div>
+                                <div class="plus">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0003 4.16699V15.8337M4.16699 10.0003H15.8337" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-buy__price">
+                            <div class="products-buy__price-title">Цена </div>
+                            <div class="products-buy__price-text">200 700 ₽</div>
+                        </div>
+                        <div class="products-buy__delete">
+                            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9997 18V33.7333C17.9997 35.2268 17.9997 35.973 18.2903 36.5435C18.546 37.0452 18.9536 37.454 19.4554 37.7096C20.0253 38 20.7717 38 22.2622 38H29.7371C31.2277 38 31.973 38 32.5429 37.7096C33.0446 37.454 33.4536 37.0452 33.7093 36.5435C33.9997 35.9736 33.9997 35.228 33.9997 33.7375V18M17.9997 18H20.6663M17.9997 18H15.333M20.6663 18H31.333M20.6663 18C20.6663 16.7575 20.6663 16.1365 20.8693 15.6465C21.14 14.9931 21.6588 14.4736 22.3122 14.203C22.8022 14 23.4238 14 24.6663 14H27.333C28.5755 14 29.1968 14 29.6868 14.203C30.3402 14.4736 30.8592 14.9931 31.1299 15.6465C31.3329 16.1365 31.333 16.7575 31.333 18M31.333 18H33.9997M33.9997 18H36.6663" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-buys__bottom">
+                <div class="products-buys__bottom-text">
+                    Итого
+                    <span>200 700 ₽</span>
+                </div>
+                <button class="btn btn-primary products-buys__bottom-btn">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <a href="tel:+78007434343" class="footer-phone">+7(800)743-43-43</a>
+                <span class="footer-time">Пн-Вс с 9:00 до 21:00</span>
+                <div class="footer-btn btn btn-primary">Заказать звонок</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Каталог</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Солнцезащитные очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Оправы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контактные линзы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Аксессуары для очков</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Проверка зрения</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Взрослая диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Детская диагностика</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Рецепт на очки</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подбор контактных линз</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu__title">Полезная информация</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">О компании</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Акции</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Подарочные карты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
