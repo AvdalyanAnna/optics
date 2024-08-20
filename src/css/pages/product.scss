@@ -151,6 +151,81 @@
         }
       }
 
+      &-radio {
+        //margin: 23px 0;
+        margin-bottom: 23px;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+        @include xs {
+          margin-bottom: 10px;
+        }
+
+        input {
+          display: none;
+
+          &:checked + label:after {
+            opacity: 1;
+          }
+        }
+
+        label {
+          padding-left: 30px;
+          position: relative;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 139%;
+          color: #323232;
+          cursor: pointer;
+          display: flex;
+          @include xs {
+            line-height: 1.2;
+            font-size: 14px;
+          }
+          span{
+            display: block;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid var(--primary);
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+            @include xs {
+              top: 0;
+              transform: translateY(0);
+            }
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s;
+            opacity: 0;
+            @include xs {
+              transform: translateY(0);
+              top: 4px;
+            }
+          }
+        }
+      }
+
       &-more {
         margin-top: 29px;
         font-family: var(--font-family);
@@ -686,6 +761,7 @@
         @include xs {
           font-size: 20px;
         }
+
         span {
           font-family: var(--second-family);
           font-weight: 700;
@@ -783,7 +859,7 @@
     }
   }
 
-  &__delete  svg{
+  &__delete svg {
     @include xs {
       width: 36px;
       height: 36px;
@@ -812,6 +888,7 @@
     @include xs {
       padding-right: 0;
     }
+
     &-title {
       margin-bottom: 12px;
       font-family: var(--font-family);
@@ -846,11 +923,12 @@
   border-radius: 49px;
   @include xs {
     padding: 4px 10px;
-    svg{
+    svg {
       width: 16px;
       height: 16px;
     }
   }
+
   .kilogram {
 
     display: flex;
@@ -864,6 +942,7 @@
       font-size: 14px;
       margin-right: 8px;
     }
+
     input {
       height: auto;
       border: none;

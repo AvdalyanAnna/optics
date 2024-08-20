@@ -370,6 +370,7 @@ $(function () {
         $this.parent().find('.product-filter__item-more__show').slideToggle(300)
     })
     $('.js-example-basic-single').select2();
+    $('.select').select2();
 
     function collision($div1, $div2) {
         var x1 = $div1.offset().left;

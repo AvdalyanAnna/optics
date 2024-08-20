@@ -41,5 +41,23 @@
       }
     }
   }
+  &-dark{
+    border-color: #323232;
+    background: #323232;
+    color: #fff;
+    svg path{
+      transition: all 0.3s;
+    }
+    &:hover{
+      border-color: #323232;
+      background: transparent;
+      color: #323232;
+      svg{
+        path{
+          stroke: #323232;
+        }
+      }
+    }
+  }
 
 }

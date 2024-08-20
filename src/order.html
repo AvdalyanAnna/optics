@@ -1,0 +1,120 @@
+@@include('components/layout/head.html')
+@@include('components/layout/header.html')
+<main>
+    <div class="page-top">
+        <div class="wrapper">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-item">
+                    Оформление заказа
+                </li>
+            </ul>
+            <h2 class="title">Оформление заказа</h2>
+            <div class="order">
+                <div class="order-inner">
+                    <div class="order-left">
+                        <div class="order-left__item">
+                            <div class="order-left__title">Способ получения</div>
+                            <div class="order-form__item">
+                                <div class="product-filter__item-radio">
+                                    <input type="radio" name="radio" id="radio-1">
+                                    <label for="radio-1"><span>Расчитать стоимость доставки и включить в счет</span></label>
+                                </div>
+                            </div>
+                            <div class="order-form__item">
+                                <div class="product-filter__item-radio">
+                                    <input type="radio" name="radio" id="radio-2" checked>
+                                    <label for="radio-2">Самовывоз</label>
+                                </div>
+                            </div>
+                            <div class="order-form__item">
+                                <label for="select" class="order-form__label">Пункт выдачи</label>
+                                    <select class="js-example-basic-single select" id="select" name="state">
+                                        <option value="WY">Выберите пункт выдачи</option>
+                                        <option value="AL">По популярности</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="order-left__item">
+                            <div class="order-left__title">Данные получателя</div>
+                            <div class="order-form__item">
+                                <label for="name" class="order-form__label">Ваше имя</label>
+                                <input type="text" id="name" class="order-form__input" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="surname" class="order-form__label">Ваша фамилия</label>
+                                <input type="text" id="surname" class="order-form__input" placeholder="Введите вашу фамилию">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="phone" class="order-form__label">Ваш телефон</label>
+                                <input type="text" id="phone" class="order-form__input" placeholder="Введите ваш телефон">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="email" class="order-form__label">Ваш e-mail</label>
+                                <input type="email" id="email" class="order-form__input" placeholder="Введите ваш e-mail">
+                            </div>
+                            <div class="order-form__item">
+                                <label for="comment" class="order-form__label">Комментарий</label>
+                                <textarea id="comment" class="order-form__textarea" placeholder="Введите комментарий к заказу"></textarea>
+                            </div>
+                        </div>
+                        <div class="order-left__item">
+                            <div class="order-left__title">Списать бонусы</div>
+                            <div class="order-form__item">
+                                <label for="bonus" class="order-form__label">Ваш счет <span class="text-primary">234</span> бонуса</label>
+                                <div class="order-form__flex">
+                                    <input type="text" id="bonus" class="order-form__input" placeholder="Введите количество бонусов к списанию">
+                                    <button class="btn btn-dark">Списать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-right">
+                        <div class="order-right__title">Ваш заказ</div>
+                        <div class="order-right__list">
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>20 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>2 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>200 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Versace VE4361 GB1/87</span>
+                                <span>20 700 ₽</span>
+                            </div>
+                            <div class="order-right__item">
+                                <span>Доставка</span>
+                                <span>700 ₽</span>
+                            </div>
+                        </div>
+                        <div class="order-right__bottom">
+                            <div class="order-right__price">
+                                Итого
+                                <span>246 700 ₽</span>
+                            </div>
+                            <button class="btn btn-primary order-right__btn">Подтвердить заказ</button>
+                        </div>
+                        <div class="order-right__info">
+                            Нажимая кнопку вы даете согласие на
+                            <a href="#" class="text-primary link">обработку персональных данных</a>
+                            в соответствии с
+                            <a href="#" class="text-primary link">политикой конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('components/layout/footer.html')
+@@include('components/layout/script.html')

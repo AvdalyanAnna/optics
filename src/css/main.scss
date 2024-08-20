@@ -199,7 +199,6 @@ main{
   }
 }
 
-.product-filter{
   .select2{
     margin-top: -10px;
     width: 100% !important;
@@ -228,7 +227,6 @@ main{
       }
     }
   }
-}
 
 .select2-container--default {
 
@@ -323,7 +321,7 @@ main{
 input{
   outline: none !important;
   &:focus{
-    border: none !important;
+    outline: none !important;
     box-shadow: none !important;
   }
 }
