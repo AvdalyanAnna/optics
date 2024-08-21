@@ -1,0 +1,425 @@
+body{
+  overflow-x: hidden;
+}
+.home {
+
+  &-hero {
+    background: #FAFAFA;
+    position: relative;
+    margin-bottom: 190px;
+    @include sm {
+      margin-bottom: 150px;
+    }
+    @include xs {
+      margin-bottom: 100px;
+    }
+
+    &__content {
+      position: relative;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 70px 0 120px;
+      @include sm {
+        padding: 96px 0 68px;
+      }
+      @include xs {
+        padding: 50px 0 160px;
+      }
+    }
+
+    &__logo {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__text {
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: #323232;
+      max-width: 440px;
+      width: 100%;
+      margin-top: -9px;
+      margin-bottom: 13px;
+      @include sm {
+        max-width: 357px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        margin-top: 25px;
+      }
+      @include xs {
+        font-size: 14px;
+        margin-top: 17px;
+      }
+    }
+
+    &__btn {
+      max-width: 440px;
+      width: 100%;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      @include sm {
+        max-width: 357px;
+        font-size: 18px;
+        padding: 13px 25px;
+      }
+      @include xs {
+        font-size: 14px;
+        padding: 9px 19px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      bottom: -111px;
+      @include xs {
+        flex-wrap: wrap;
+        bottom: -54px;
+        gap: 10px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 20px;
+      width: calc(25% - 10px);
+      height: 168px;
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: #d91f3a;
+      @include sm {
+        font-size: 14px;
+        height: 147px;
+      }
+      @include xs {
+        width: calc(50% - 5px);
+        height: 92px;
+        font-size: 12px;
+        padding: 16px;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+    @include xs {
+      margin-bottom: 20px;
+    }
+  }
+
+  .blog-list__head .title {
+    margin-bottom: 0;
+  }
+
+  .products-pop {
+    margin: 110px 0;
+    @include sm {
+      margin: 77px 0;
+    }
+    @include xs {
+      margin: 55px 0;
+    }
+  }
+
+  .clients {
+    margin: 40px 0;
+    padding-bottom: 32px;
+    @include xs {
+      padding-top: 10px;
+    }
+  }
+
+  .contact {
+    margin: 108px 0 0;
+    @include sm {
+      margin: 76px 0 0;
+    }
+    @include xs {
+      margin: 47px 0 0;
+    }
+  }
+
+  &-blog {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    @include sm {
+      flex-direction: column;
+    }
+    @include xs {
+      margin: 20px 0;
+    }
+
+    &__item {
+      max-width: calc(50% - 10px);
+      width: 100%;
+      height: 410px;
+      padding: 32px;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      @include sm {
+        max-width: 100%;
+        height: 320px;
+      }
+
+      &:hover {
+        .home-blog__arrow {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 127%;
+      color: #323232;
+      position: absolute;
+      bottom: 23px;
+      left: 32px;
+      max-width: 90%;
+      @include xs {
+        font-size: 20px;
+        line-height: 118%;
+        bottom: 15px;
+        left: 20px;
+      }
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      transition: all 0.3s;
+      @include xs {
+        top: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  @include sm {
+    .blog-advertising__title {
+      margin-bottom: 12px;
+    }
+    .blog-advertising__desc {
+      font-family: var(--second-family);
+      line-height: 130%;
+      margin-bottom: 21px;
+    }
+    .blog-advertising__btn {
+      padding: 12px 24px;
+    }
+    .blog-list__head {
+      margin: 20px 0 40px;
+    }
+    .clients {
+      margin: 40px 0;
+      padding-bottom: 14px;
+    }
+  }
+  @include xs {
+    .stock-slider {
+      margin-bottom: 40px;
+    }
+    .blog-advertising__title {
+      margin-bottom: 8px;
+    }
+    .blog-advertising__desc {
+      line-height: 120%;
+      margin-bottom: 16px;
+    }
+    .blog-advertising__btn {
+      padding: 8px 16px;
+    }
+    .blog-list__head {
+      margin: 20px 0;
+    }
+  }
+
+  .effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .effect-1 {
+    position: absolute;
+    left: 36.5vw;
+    top: -86px;
+    will-change: transform;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media screen and (max-width: 1200px) {
+      left: 25vw;
+    }
+    @media screen and (max-width: 1100px) {
+      top: -130px;
+    }
+
+    @include sm {
+      max-width: 354px;
+      height: 354px;
+      left: 23.5%;
+      top: -76px;
+    }
+    @include xs {
+      max-width: 187px;
+      height: 187px;
+      width: 100%;
+    }
+    @media screen and (max-width: 599px) {
+      left: 40vw;
+      top: -40px;
+    }
+    @media screen and (max-width: 400px) {
+      left: 30vw;
+      top: -44px;
+    }
+  }
+
+  .effect-2 {
+    position: absolute;
+    right: 18.5vw;
+    bottom: -2px;
+    will-change: transform;
+    @media screen and (max-width: 1500px) {
+      right: 5vw;
+    }
+    @media screen and (max-width: 1200px) {
+      right: -5vw;
+    }
+    @media screen and (max-width: 1100px) {
+      right: -15vw;
+      bottom: -50px;
+    }
+    @media screen and (max-width: 800px) {
+      right: -8vw;
+      bottom: 43px;
+    }
+    @media screen and (max-width: 599px) {
+      right: -8vw;
+      bottom: 143px;
+    }
+    @media screen and (max-width: 400px) {
+      right: -26vw;
+      bottom: 181px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include sm {
+      max-width: 321px;
+      height: 321px;
+      //right: 18.5%;
+      //bottom: -2px;
+    }
+    @include xs {
+      max-width: 174px;
+      height: 174px;
+      //right: 18.5%;
+      //bottom: -2px;
+    }
+  }
+
+  .effect-3 {
+    position: absolute;
+    left: 6vw;
+    bottom: -183px;
+    will-change: transform;
+    @media screen and (max-width: 1500px) {
+      left: -10vw;
+    }
+    @media screen and (max-width: 1200px) {
+      left: -20vw;
+    }
+    @media screen and (max-width: 1100px) {
+      left: -25vw;
+    }
+    @media screen and (max-width: 800px) {
+      left: -20vw;
+      bottom: -103px;
+    }
+    @media screen and (max-width: 599px) {
+      left: -30vw;
+      bottom: -50px;
+    }
+    @media screen and (max-width: 400px) {
+      bottom: 43px;
+      left: -35vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include sm {
+      max-width: 402px;
+      height: 311px;
+      width: 100%;
+    }
+    @include xs {
+      max-width: 238px;
+      height: 187px;
+      width: 100%;
+    }
+  }
+}
+
+.home-page .header {
+  background: #FAFAFA;
+}

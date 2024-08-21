@@ -127,6 +127,11 @@ $(function () {
                 spaceBetween: 20,
             },
         },
+        loop:true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 
 
@@ -150,7 +155,8 @@ $(function () {
         // freeMode: true,
         thumbs: {
             swiper: productSmallSwiper
-        }
+        },
+
     });
 
 
@@ -220,6 +226,33 @@ $(function () {
         $('body').removeClass('overflow-hidden')
     })
 
+    $('.products-buy__delete').on('click', function () {
+        $(this).parents('.products-buy').remove()
+    })
+
+    $(document).on('click', '.kilograms .minus , .kilograms .plus  ', function () {
+        var $this = $(this),
+            min = +$this.parents('.kilograms').data('min') || 1,
+            step = +$this.parents('.kilograms').data('step'),
+            kilogram = $this.siblings('.kilogram').find('input'),
+            kilogramVal = +kilogram.val();
+
+        if ($this.hasClass('minus') && kilogramVal > min) {
+            kilogramVal -= step;
+            if (kilogramVal < step) {
+                kilogram = step
+            }
+        } else if ($this.hasClass('plus')) {
+            kilogramVal += step;
+        }
+
+        if (kilogramVal > min) {
+            $this.parents('.kilograms').find('.minus').removeClass('disabled')
+        } else {
+            $this.parents('.kilograms').find('.minus').addClass('disabled')
+        }
+        kilogram.val(kilogramVal)
+    })
 })
 
 
@@ -247,4 +280,26 @@ let catalogSwiper = new Swiper(".catalog-slider__swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+
+let parallaxInstance1 =  new Parallax(document.querySelector('.effect-1'), {
+    relativeInput: true
+});
+parallaxInstance1.friction(0.2, 0.2);
+let parallaxInstance2 =  new Parallax(document.querySelector('.effect-2'), {
+    relativeInput: true,
+    invertX: false,
+    invertY: true
+});
+
+let parallaxInstance3 =  new Parallax(document.querySelector('.effect-3'), {
+    relativeInput: true,
+    invertX: false,
+    invertY: true
+});
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    document.querySelector('.effect-1').style.transform = `translateY(${scrolled * 0.05}px)`;
+    document.querySelector('.effect-2').style.transform = `translateY(-${scrolled * 0.05}px)`;
+    document.querySelector('.effect-3').style.transform = `translateY(${scrolled * 0.05}px)`;
 });

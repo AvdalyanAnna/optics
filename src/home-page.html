@@ -1,311 +1,765 @@
-@@include('components/layout/head.html')
+@@include('components/layout/head.html',{bodyClass:'home-page'})
 @@include('components/layout/header.html')
 <main>
-    <div class="page-top">
-<div class="wrapper">
-    <h2 class="title">Акции</h2>
-    <div class="swiper stock-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide stock-slider__item">
-                <div class="stock-slider__bg">
-                    <img src="img/stock-slider.jpg" alt="stock">
-                </div>
-                <div class="stock-slider__item-number">1/3</div>
-                <div class="stock-slider__top">
-                    <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении </div>
-                    <p class="stock-slider__desc">
-                        <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
-                    </p>
-                </div>
-                <div class="stock-slider__bottom">
-                    <div class="stock-slider__span">Следующая акция</div>
-                    <div class="stock-slider__more">
-                        <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет</div>
-                        <div class="stock-slider__svg">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+    <div class="home">
+        <section>
+            <div class="home-hero page-top">
+                <div class="wrapper">
+                    <div  class="effect-1">
+                        <img data-depth="0.2"  src="img/effect-1.png" alt="effect">
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide stock-slider__item">
-                <div class="stock-slider__bg">
-                    <img src="img/stock-slider.jpg" alt="stock">
-                </div>
-                <div class="stock-slider__item-number">2/3</div>
-                <div class="stock-slider__top">
-                    <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении </div>
-                    <p class="stock-slider__desc">
-                        <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
-                    </p>
-                </div>
-                <div class="stock-slider__bottom">
-                    <div class="stock-slider__span">Следующая акция</div>
-                    <div class="stock-slider__more">
-                        <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет</div>
-                        <div class="stock-slider__svg">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+                    <div  class="effect-2">
+                        <img data-depth="0.4"  src="img/effect-2.png" alt="effect">
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide stock-slider__item">
-                <div class="stock-slider__bg">
-                    <img src="img/stock-slider.jpg" alt="stock">
-                </div>
-                <div class="stock-slider__item-number">3/3</div>
-                <div class="stock-slider__top">
-                    <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении </div>
-                    <p class="stock-slider__desc">
-                        <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
-                    </p>
-                </div>
-                <div class="stock-slider__bottom">
-                    <div class="stock-slider__span">Следующая акция</div>
-                    <div class="stock-slider__more">
-                        <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет</div>
-                        <div class="stock-slider__svg">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+                    <div  class="effect-3">
+                        <img data-depth="0.6"  src="img/effect-3.png" alt="effect">
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <div class="blog-advertising">
-        <div class="blog-advertising__bg">
-            <img src="img/blog-advertising.png" alt="advertising">
-        </div>
-        <div class="blog-advertising__content">
-            <div class="blog-advertising__title">Хотите проверить зрение?</div>
-            <div class="blog-advertising__desc">Оставляйте заявку и мы подберем удобную точку и время диагностики зрения</div>
-            <button class="blog-advertising__btn btn btn-primary">
-                Записаться на проверку зрения
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.66699 16H25.3337M25.3337 16L17.3337 8M25.3337 16L17.3337 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-</div>
-            <div class="clients">
-                <div class="clients-inner">
-                    <div class="wrapper">
-                        <h2 class="title">
-                            У нас вы найдете только <br> оригинальные <span class="text-primary">брендовые очки и оправы</span>
-                        </h2>
-                    </div>
-                    <div>
-                        <div class="clients-list__inner clients-list__inner-1">
-                            <div class="clients-list">
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
+<!--                    <img class="effect-2" src="img/effect-2.png" alt="effect">-->
+<!--                    <img class="effect-3" src="img/effect-3.png" alt="effect">-->
+
+                    <div class="home-hero__content">
+                        <div class="home-hero__inner">
+                            <div class="home-hero__logo">
+                                <img src="img/logo-hero.svg" alt="">
                             </div>
-                        </div>
-                        <div class="clients-list__inner clients-list__inner-2">
-                            <div class="clients-list">
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
+                            <div class="home-hero__text">
+                                Проверим ваше зрение, подберем оптимальный вариант очков или линз
                             </div>
+                            <button class="home-hero__btn btn btn-primary">
+                                <span>Записаться на проверку зрения</span>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66602 16H25.3327M25.3327 16L17.3327 8M25.3327 16L17.3327 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+
                         </div>
-                        <div class="clients-list__inner clients-list__inner-3">
-                            <div class="clients-list">
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-1.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-2.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-3.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-4.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-5.jpg" alt="client">
-                                    </a>
-                                </div>
-                                <div class="clients-item">
-                                    <a href="#" class="clients-item__link">
-                                        <img src="img/clients/client-6.jpg" alt="client">
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="home-hero__list">
+                            <div class="home-hero__item">19 лет опыта работы</div>
+                            <div class="home-hero__item">16 полноценных оптических салонов</div>
+                            <div class="home-hero__item">Более 50000 довольных покупателей каждый год</div>
+                            <div class="home-hero__item">Салоны «Люкс Оптика» признаны «Торговой маркой года — 2022»</div>
                         </div>
                     </div>
 
+
+                </div>
+
+            </div>
+        </section>
+        <div class="wrapper">
+
+            <section>
+                <h2 class="title">Акции</h2>
+                <div class="swiper stock-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide stock-slider__item">
+                            <div class="stock-slider__bg">
+                                <img src="img/stock-slider.jpg" alt="stock">
+                            </div>
+                            <div class="stock-slider__item-number">1/3</div>
+                            <div class="stock-slider__top">
+                                <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении</div>
+                                <p class="stock-slider__desc">
+                                    <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
+                                </p>
+                            </div>
+                            <div class="stock-slider__bottom">
+                                <div class="stock-slider__span">Следующая акция</div>
+                                <div class="stock-slider__more">
+                                    <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет
+                                    </div>
+                                    <div class="stock-slider__svg">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide stock-slider__item">
+                            <div class="stock-slider__bg">
+                                <img src="img/stock-slider.jpg" alt="stock">
+                            </div>
+                            <div class="stock-slider__item-number">2/3</div>
+                            <div class="stock-slider__top">
+                                <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении</div>
+                                <p class="stock-slider__desc">
+                                    <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
+                                </p>
+                            </div>
+                            <div class="stock-slider__bottom">
+                                <div class="stock-slider__span">Следующая акция</div>
+                                <div class="stock-slider__more">
+                                    <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет
+                                    </div>
+                                    <div class="stock-slider__svg">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide stock-slider__item">
+                            <div class="stock-slider__bg">
+                                <img src="img/stock-slider.jpg" alt="stock">
+                            </div>
+                            <div class="stock-slider__item-number">3/3</div>
+                            <div class="stock-slider__top">
+                                <div class="stock-slider__title">Отслеживай свой бонусный баланс в приложении</div>
+                                <p class="stock-slider__desc">
+                                    <span class="text-primary">Качай приложение</span> и совершай самые выгодные покупки
+                                </p>
+                            </div>
+                            <div class="stock-slider__bottom">
+                                <div class="stock-slider__span">Следующая акция</div>
+                                <div class="stock-slider__more">
+                                    <div class="stock-slider__text">Получай 10% от покупок обратно на бонусный счет
+                                    </div>
+                                    <div class="stock-slider__svg">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5H19M19 12.5L12 5.5M19 12.5L12 19.5" stroke="white"
+                                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="products-pop">
+                <h2 class="title">Популярное</h2>
+                <div class="tabs">
+                    <div class="tabs-item active">Солнечные очки</div>
+                    <div class="tabs-item">Оптические оправы</div>
+                    <div class="tabs-item">Линзы</div>
+                    <div class="tabs-item">Аксессуары</div>
+                </div>
+                <div class="products-pop__inner">
+                    <div class="swiper products-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L8 12L15 19" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L16 12L9 19" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="products-pop">
+                <h2 class="title">Новинки</h2>
+                <div class="tabs">
+                    <div class="tabs-item active">Солнечные очки</div>
+                    <div class="tabs-item">Оптические оправы</div>
+                    <div class="tabs-item">Линзы</div>
+                    <div class="tabs-item">Аксессуары</div>
+                </div>
+                <div class="products-pop__inner">
+                    <div class="swiper products-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img">
+                                        <img src="img/product-img.jpg" alt="product-img">
+                                    </div>
+                                    <div class="product-card__price">от 27 815 ₽</div>
+                                    <h3 class="product-card__name">Versace VE4361 GB1/87</h3>
+                                    <button class="btn btn-primary product-card__btn">
+                                        <span>В корзину</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8M3 16.8002V7.2002C3 6.08009 3 5.51962 3.21799 5.0918C3.40973 4.71547 3.71547 4.40973 4.0918 4.21799C4.51962 4 5.08009 4 6.2002 4H17.8002C18.9203 4 19.4796 4 19.9074 4.21799C20.2837 4.40973 20.5905 4.71547 20.7822 5.0918C21 5.5192 21 6.07899 21 7.19691V16.8036C21 17.9215 21 18.4805 20.7822 18.9079C20.5905 19.2842 20.2837 19.5905 19.9074 19.7822C19.48 20 18.921 20 17.8031 20H6.19691C5.07899 20 4.5192 20 4.0918 19.7822C3.71547 19.5905 3.40973 19.2842 3.21799 18.9079C3 18.4801 3 17.9203 3 16.8002Z"
+                                                  stroke="white" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L8 12L15 19" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L16 12L9 19" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="title">Проверка зрения</h2>
+                <div class="blog-advertising">
+                    <div class="blog-advertising__bg">
+                        <img src="img/blog-advertising.png" alt="advertising">
+                    </div>
+                    <div class="blog-advertising__content">
+                        <div class="blog-advertising__title">Хотите проверить зрение?</div>
+                        <div class="blog-advertising__desc">Оставляйте заявку и мы подберем удобную точку и время
+                            диагностики зрения
+                        </div>
+                        <button class="blog-advertising__btn btn btn-primary">
+                            Записаться на проверку зрения
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66699 16H25.3337M25.3337 16L17.3337 8M25.3337 16L17.3337 24" stroke="white"
+                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="home-blog">
+                <div class="home-blog__item">
+                    <div class="home-blog__img">
+                        <img src="img/home-blog-1.jpg" alt="home-blog">
+                    </div>
+                    <div class="home-blog__title">Диагностика зрения</div>
+                    <div class="home-blog__arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="home-blog__item">
+                    <div class="home-blog__img">
+                        <img src="img/home-blog-2.jpg" alt="home-blog">
+                    </div>
+                    <div class="home-blog__title">Подбор контактных линз</div>
+                    <div class="home-blog__arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="home-blog__item">
+                    <div class="home-blog__img">
+                        <img src="img/home-blog-3.jpg" alt="home-blog">
+                    </div>
+                    <div class="home-blog__title">Подбор очков</div>
+                    <div class="home-blog__arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="home-blog__item">
+                    <div class="home-blog__img">
+                        <img src="img/home-blog-4.jpg" alt="home-blog">
+                    </div>
+                    <div class="home-blog__title">Полный офтальмологический осмотр для детей и взрослых</div>
+                    <div class="home-blog__arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
             </div>
+
+
+        </div>
+
+        <div class="clients">
+            <div class="clients-inner">
+                <div class="wrapper">
+                    <h2 class="title">
+                        У нас вы найдете только <br> оригинальные <span
+                            class="text-primary">брендовые очки и оправы</span>
+                    </h2>
+                </div>
+                <div>
+                    <div class="clients-list__inner clients-list__inner-1">
+                        <div class="clients-list">
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-list__inner clients-list__inner-2">
+                        <div class="clients-list">
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-list__inner clients-list__inner-3">
+                        <div class="clients-list">
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-1.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-2.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-3.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-4.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-5.jpg" alt="client">
+                                </a>
+                            </div>
+                            <div class="clients-item">
+                                <a href="#" class="clients-item__link">
+                                    <img src="img/clients/client-6.jpg" alt="client">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="wrapper">
 
             <div class="blog-list__head">
-                <div class="title">Читайте другие наши статьи</div>
+                <div class="title">Читайте наши <span class="text-primary">полезные статьи</span></div>
                 <button class="btn btn-primary">
                     <span>Перейти в блог</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
                     </svg>
                 </button>
             </div>
@@ -366,24 +820,44 @@
                 </div>
             </div>
 
-            <div class="mt-[100px]"></div>
-
             <div class="contact">
                 <h2 class="title">Наши салоны</h2>
                 <div class="contact-inner">
                     <div class="contact-addresses">
-                        <div class="contact-address active" data-longitude="59.93" data-latitude="30.21">Привокзальная пл., 1, ТЦ "Лето"</div>
-                        <div class="contact-address" data-longitude="59.93" data-latitude="30.41">ул. Дзержинского, 6</div>
-                        <div class="contact-address" data-longitude="59.93" data-latitude="30.31">ул. Воровского, 114, ТЦ "Атлант", 5 этаж</div>
-                        <div class="contact-address" data-longitude="59.93" data-latitude="30.81">«Люкс Оптика Fashion», ул. Воровского, 46</div>
-                        <div class="contact-address" data-longitude="59.93" data-latitude="30.33">"Люкс Оптика Premium", ул. Преображенская, 38</div>
-                        <div class="contact-address" data-longitude="59.53" data-latitude="30.31">ул. Воровского, 77, ТЦ ЦУМ</div>
-                        <div class="contact-address" data-longitude="59.63" data-latitude="30.31">Привокзальная пл., 1, ТЦ "Лето"</div>
-                        <div class="contact-address" data-longitude="59.23" data-latitude="30.11">ул. Дзержинского, 6</div>
-                        <div class="contact-address" data-longitude="59.33" data-latitude="30.31">ул. Воровского, 114, ТЦ "Атлант", 5 этаж</div>
-                        <div class="contact-address" data-longitude="59.13" data-latitude="30.31">«Люкс Оптика Fashion», ул. Воровского, 46</div>
-                        <div class="contact-address" data-longitude="59.96" data-latitude="30.31">"Люкс Оптика Premium", ул. Преображенская, 38</div>
-                        <div class="contact-address" data-longitude="53.93" data-latitude="30.31">ул. Воровского, 77, ТЦ ЦУМ</div>
+                        <div class="contact-address active" data-longitude="59.93" data-latitude="30.21">Привокзальная
+                            пл., 1, ТЦ "Лето"
+                        </div>
+                        <div class="contact-address" data-longitude="59.93" data-latitude="30.41">ул. Дзержинского, 6
+                        </div>
+                        <div class="contact-address" data-longitude="59.93" data-latitude="30.31">ул. Воровского, 114,
+                            ТЦ "Атлант", 5 этаж
+                        </div>
+                        <div class="contact-address" data-longitude="59.93" data-latitude="30.81">«Люкс Оптика Fashion»,
+                            ул. Воровского, 46
+                        </div>
+                        <div class="contact-address" data-longitude="59.93" data-latitude="30.33">"Люкс Оптика Premium",
+                            ул. Преображенская, 38
+                        </div>
+                        <div class="contact-address" data-longitude="59.53" data-latitude="30.31">ул. Воровского, 77, ТЦ
+                            ЦУМ
+                        </div>
+                        <div class="contact-address" data-longitude="59.63" data-latitude="30.31">Привокзальная пл., 1,
+                            ТЦ "Лето"
+                        </div>
+                        <div class="contact-address" data-longitude="59.23" data-latitude="30.11">ул. Дзержинского, 6
+                        </div>
+                        <div class="contact-address" data-longitude="59.33" data-latitude="30.31">ул. Воровского, 114,
+                            ТЦ "Атлант", 5 этаж
+                        </div>
+                        <div class="contact-address" data-longitude="59.13" data-latitude="30.31">«Люкс Оптика Fashion»,
+                            ул. Воровского, 46
+                        </div>
+                        <div class="contact-address" data-longitude="59.96" data-latitude="30.31">"Люкс Оптика Premium",
+                            ул. Преображенская, 38
+                        </div>
+                        <div class="contact-address" data-longitude="53.93" data-latitude="30.31">ул. Воровского, 77, ТЦ
+                            ЦУМ
+                        </div>
                     </div>
                     <div class="contact-map">
                         <div id="about-map" class="about-map"></div>
