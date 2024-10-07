@@ -1,3 +1,23 @@
+$(function (){
+
+    $(".modal .modal__container").on("click", function (e) {
+        e.stopPropagation();
+    });
+
+    $(".open__modal").on("click", function (e) {
+        e.preventDefault();
+        const open = $(this).data('open');
+        $(open).fadeIn();
+    });
+
+    $(".modal .close, .modal, .modal-close ").on("click", function (e) {
+        e.preventDefault();
+        $(".modal").fadeOut(function () {
+            $("body").css("overflow", "auto");
+        });
+    });
+})
+
 $(function () {
     if ($('div').is('#about-map')) {
         function init() {
@@ -303,3 +323,6 @@ window.addEventListener('scroll', function() {
     document.querySelector('.effect-2').style.transform = `translateY(-${scrolled * 0.05}px)`;
     document.querySelector('.effect-3').style.transform = `translateY(${scrolled * 0.05}px)`;
 });
+
+
+
